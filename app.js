@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+alert("App JS Loaded");document.addEventListener("DOMContentLoaded", () => {
   console.log("GrowFastPK App Loaded");
 });
 document.getElementById("registerBtn")?.addEventListener("click", async () => {
