@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if(registerBtn){
 
-    registerBtn.addEventListener("click", async () => {
+    registerBtn.addEventListener("click", async () => {registerBtn.addEventListener("click", async () => {
+
+  alert("Button clicked");
+
+  const email = document.getElementById("email").value;
 
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
