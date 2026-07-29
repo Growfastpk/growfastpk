@@ -4,13 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const registerBtn = document.getElementById("registerBtn");
 
-  if(registerBtn){
+  if (registerBtn) {
 
-    registerBtn.addEventListener("click", async () => {registerBtn.addEventListener("click", async () => {
-
-  alert("Button clicked");
-
-  const email = document.getElementById("email").value;
+    registerBtn.addEventListener("click", async () => {
 
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
@@ -20,10 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
         password: password
       });
 
-      if(error){
+      if (error) {
         document.getElementById("message").innerText = error.message;
       } else {
-        document.getElementById("message").innerText = "Account created successfully";
+        document.getElementById("message").innerText =
+          "Account created successfully. Please check your email.";
       }
 
     });
